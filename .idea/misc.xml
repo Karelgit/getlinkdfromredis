@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../QuartzService" />
+    <file type="web" url="file://$PROJECT_DIR$/../Test" />
+    <file type="web" url="file://$PROJECT_DIR$/../ZombieSiteCheck" />
+    <file type="web" url="file://$PROJECT_DIR$/../ZombieSiteCheck1" />
+    <file type="web" url="file://E:/IDEA_GIT_REPOS/ZombieMonitor" />
+    <file type="web" url="file://E:/IDEA_GIT_REPOS/ZombieMonitor/ZombieMonitor" />
+    <file type="web" url="file://E:/IDEA_GIT_REPOS/ZombieSiteCheck" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../QuartzService/pom.xml" />
+        <option value="$PROJECT_DIR$/../GW.Storm/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyStorm-Crawler/pom.xml" />
+        <option value="E:/IDEA_GIT_REPOS/ZombieSiteCheck/pom.xml" />
+        <option value="E:/IDEA_GIT_REPOS/ZombieMonitor/pom.xml" />
+        <option value="E:/MyEclipse Blue WorkSpace/SE-Toad.MR/pom.xml" />
+        <option value="D:/SpellCheck 交付/yz-guizhou-spellcheck/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7 " project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/../nutch-1.6">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://svn.apache.org/repos/asf/nutch/branches" />
+                  <option value="https://svn.apache.org/repos/asf/nutch/cms_site" />
+                  <option value="https://svn.apache.org/repos/asf/nutch/site" />
+                  <option value="https://svn.apache.org/repos/asf/nutch/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://svn.apache.org/repos/asf/nutch/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

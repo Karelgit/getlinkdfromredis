@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GW.Storm/GW.Storm.iml" filepath="$PROJECT_DIR$/../GW.Storm/GW.Storm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GetLinkDFromRedis.iml" filepath="$PROJECT_DIR$/GetLinkDFromRedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MyStorm-Crawler/MyStorm-Crawler.iml" filepath="$PROJECT_DIR$/../MyStorm-Crawler/MyStorm-Crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../QuartzService/QuartzService.iml" filepath="$PROJECT_DIR$/../QuartzService/QuartzService.iml" />
+      <module fileurl="file://E:/MyEclipse Blue WorkSpace/SE-Toad.MR/SE-Toad.MR.iml" filepath="E:/MyEclipse Blue WorkSpace/SE-Toad.MR/SE-Toad.MR.iml" />
+      <module fileurl="file://E:/IDEA_GIT_REPOS/ZombieMonitor/ZombieMonitor.iml" filepath="E:/IDEA_GIT_REPOS/ZombieMonitor/ZombieMonitor.iml" />
+      <module fileurl="file://E:/IDEA_GIT_REPOS/ZombieSiteCheck/ZombieSiteCheck.iml" filepath="E:/IDEA_GIT_REPOS/ZombieSiteCheck/ZombieSiteCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nutch-1.6/nutch-1.6.iml" filepath="$PROJECT_DIR$/../nutch-1.6/nutch-1.6.iml" />
+      <module fileurl="file://D:/SpellCheck 交付/yz-guizhou-spellcheck/yz-guizhou-spellcheck.iml" filepath="D:/SpellCheck 交付/yz-guizhou-spellcheck/yz-guizhou-spellcheck.iml" />
+    </modules>
+  </component>
+</project>

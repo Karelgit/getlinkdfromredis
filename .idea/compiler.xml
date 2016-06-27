@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="QuartzService" />
+        <module name="SE-Toad.MR" />
+        <module name="Test123" />
+        <module name="ZombieSiteCheck (1)" />
+        <module name="ZombieSiteCheck1" />
+      </profile>
+      <profile default="false" name="Annotation profile for GW.Storm" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="GW.Storm" />
+      </profile>
+      <profile default="false" name="Annotation profile for MyStorm-Crawler" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="MyStorm-Crawler" />
+      </profile>
+      <profile default="false" name="Annotation profile for ZombieSiteCheck20150729" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ZombieSiteCheck20150729" />
+      </profile>
+      <profile default="false" name="Annotation profile for ZombieSiteCheck" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ZombieSiteCheck" />
+      </profile>
+      <profile default="false" name="Annotation profile for ZombieMonitor" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ZombieMonitor" />
+      </profile>
+      <profile default="false" name="Annotation profile for yz-guizhou-spellcheck" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yz-guizhou-spellcheck" />
+      </profile>
+      <profile default="false" name="Annotation profile for GetLinkDFromRedis" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="GetLinkDFromRedis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="GetLinkDFromRedis" target="1.6" />
+      <module name="GW.Storm" target="1.7" />
+      <module name="MyStorm-Crawler" target="1.7" />
+      <module name="QuartzService" target="1.5" />
+      <module name="SE-Toad.MR" target="1.5" />
+      <module name="yz-guizhou-commons" target="1.5" />
+      <module name="yz-guizhou-spellcheck" target="1.6" />
+      <module name="ZombieMonitor" target="1.7" />
+      <module name="ZombieSiteCheck" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

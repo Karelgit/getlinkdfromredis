@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ZombieMonitor:war">
+    <output-path>E:/IDEA_GIT_REPOS/ZombieMonitor/target</output-path>
+    <root id="archive" name="ZombieMonitor-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ZombieMonitor:war exploded" />
+    </root>
+  </artifact>
+</component>
