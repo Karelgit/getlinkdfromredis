@@ -56,7 +56,7 @@
     <orderEntry type="library" name="Maven: org.glassfish.hk2:hk2-api:2.4.0-b25" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b25" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.mail:mail:1.4.3" level="project" />
-    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml:webservices-api-osgi:2.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.weld:weld-osgi-bundle:1.0.1-SP3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.enterprise:cdi-api:1.0-SP1" level="project" />
@@ -143,6 +143,7 @@
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-auth:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-guice:1.9" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-servlet:3.0" level="project" />
@@ -184,46 +185,6 @@
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.9" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9" level="project" />
     <orderEntry type="library" name="Maven: com.yeezhao.guizhou:yz-guizhou-spellcheck:0.2.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.yeezhao.guizhou:yz-guizhou-commons:0.2.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-common:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-client:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-nodemanager:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.9" level="project" />
-    <orderEntry type="library" name="Maven: org.fusesource.leveldbjni:leveldbjni-all:1.8" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-app:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-it:0.98.0-hadoop2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-server:0.98.0-hadoop2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.hbase:hbase-prefix-tree:0.98.0-hadoop2" level="project" />
-    <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.github.stephenc.high-scale-lib:high-scale-lib:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-sslengine:6.1.26" level="project" />
-    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-2.1:6.1.14" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jdt:core:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-api-2.1:6.1.14" level="project" />
-    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api-2.5:6.1.14" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.8.8" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: tomcat:jasper-compiler:5.5.23" level="project" />
-    <orderEntry type="library" name="Maven: org.jamon:jamon-runtime:2.3.1" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.8" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-json:1.8" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.7.1" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.8" level="project" />
-    <orderEntry type="library" name="Maven: asm:asm:3.1" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-hdfs:test-jar:tests:2.2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-hadoop-compat:0.98.0-hadoop2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-hadoop2-compat:0.98.0-hadoop2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:test-jar:tests:2.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.yeezhao.commons:yz-commons-util:0.2.16" level="project" />
-    <orderEntry type="library" name="Maven: commons-dbutils:commons-dbutils:1.4" level="project" />
-    <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.2" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.16" level="project" />
     <orderEntry type="library" name="Maven: org.ansj:ansj_seg:2.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.nlpcn:nlp-lang:0.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.5" level="project" />

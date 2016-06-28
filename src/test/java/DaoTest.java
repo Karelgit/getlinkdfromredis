@@ -47,4 +47,12 @@ public class DaoTest {
         System.out.println(jedis.lindex("err:editdist:习近平", 1));
 
     }
+
+    @Test
+    public void testExportFromRedis() {
+        String tableName = "www.gygov.com";
+        linkUnAvailService.init(tableName);
+        linkUnAvailService.batchFromRedis(tableName);
+    }
+
 }

@@ -80,14 +80,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="GetLinkDFromRedis" target="1.6" />
-      <module name="GW.Storm" target="1.7" />
-      <module name="MyStorm-Crawler" target="1.7" />
-      <module name="QuartzService" target="1.5" />
-      <module name="SE-Toad.MR" target="1.5" />
-      <module name="yz-guizhou-commons" target="1.5" />
-      <module name="yz-guizhou-spellcheck" target="1.6" />
-      <module name="ZombieMonitor" target="1.7" />
-      <module name="ZombieSiteCheck" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

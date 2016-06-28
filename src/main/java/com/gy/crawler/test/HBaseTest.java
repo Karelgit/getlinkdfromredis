@@ -21,12 +21,12 @@ public class HBaseTest {
         Configuration hbConfig = new Configuration();
         hbConfig.addResource("hbase-site.xml");
         hbConfig = HBaseConfiguration.create(hbConfig);
-        HTable table = new HTable(hbConfig, "yeezhao.crawl.info");
+        HTable table = new HTable(hbConfig, "www.gygov.gov.cn");
 
         Scan scan = new Scan();
         ResultScanner rs = null;
         Jedis jedis = new Jedis("172.16.100.70", 6379);
-        jedis.select(10);
+        jedis.select(9);
         try {
             rs = table.getScanner(scan);
             for (Result r : rs) {
@@ -58,21 +58,6 @@ public class HBaseTest {
                         jedis.hmset("commons:crawler:errorword:" + rowkey.split("|")[0] + ":" + url, data);
                     }
                 }
-
-
-
-                /*for (int i = 0; i < list.size(); i++) {
-                    System.out.println(Bytes.toString(list.get(i).getValue()));
-
-                }*/
-
-
-                // for (KeyValue kv : r.list()) {
-
-                   /* System.out.println("rowkey:" + Bytes.toString(r.getRow()));
-                    System.out.println("family:" + new String(kv.getFamily(), "utf-8"));*/
-                //  System.out.println(Bytes.toString(kv.getQualifier()));
-                //}
             }
         } finally {
             rs.close();

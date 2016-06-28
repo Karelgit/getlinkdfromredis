@@ -15,7 +15,6 @@
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.4.0-b27" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.4.0-b25" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b25" />
-          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.1" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.0.3.RELEASE" />
@@ -89,6 +88,7 @@
           <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-auth:2.2.0" />
           <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.2.0" />
           <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.2.0" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.2.0" />
           <element id="library" level="project" name="Maven: com.google.inject:guice:3.0" />
           <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-guice:1.9" />
           <element id="library" level="project" name="Maven: com.google.inject.extensions:guice-servlet:3.0" />
@@ -121,46 +121,6 @@
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.9" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9" />
           <element id="library" level="project" name="Maven: com.yeezhao.guizhou:yz-guizhou-spellcheck:0.2.0-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: com.yeezhao.guizhou:yz-guizhou-commons:0.2.0-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-common:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-client:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-nodemanager:2.6.0" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.9" />
-          <element id="library" level="project" name="Maven: org.fusesource.leveldbjni:leveldbjni-all:1.8" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-client:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-app:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.6.0" />
-          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-it:0.98.0-hadoop2" />
-          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-server:0.98.0-hadoop2" />
-          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-prefix-tree:0.98.0-hadoop2" />
-          <element id="library" level="project" name="Maven: com.yammer.metrics:metrics-core:2.1.2" />
-          <element id="library" level="project" name="Maven: com.github.stephenc.high-scale-lib:high-scale-lib:1.1.1" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-sslengine:6.1.26" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jsp-2.1:6.1.14" />
-          <element id="library" level="project" name="Maven: org.eclipse.jdt:core:3.1.1" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jsp-api-2.1:6.1.14" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:servlet-api-2.5:6.1.14" />
-          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.8.8" />
-          <element id="library" level="project" name="Maven: tomcat:jasper-compiler:5.5.23" />
-          <element id="library" level="project" name="Maven: org.jamon:jamon-runtime:2.3.1" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.8" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-json:1.8" />
-          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" />
-          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-xc:1.7.1" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.8" />
-          <element id="library" level="project" name="Maven: asm:asm:3.1" />
-          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.2" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-hdfs:test-jar:tests:2.2.0" />
-          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-hadoop-compat:0.98.0-hadoop2" />
-          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-hadoop2-compat:0.98.0-hadoop2" />
-          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:test-jar:tests:2.2.0" />
-          <element id="library" level="project" name="Maven: com.yeezhao.commons:yz-commons-util:0.2.16" />
-          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.4" />
-          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.16" />
           <element id="library" level="project" name="Maven: org.ansj:ansj_seg:2.0.6" />
           <element id="library" level="project" name="Maven: org.nlpcn:nlp-lang:0.2.1" />
           <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.5" />

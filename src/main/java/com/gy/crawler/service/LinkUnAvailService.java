@@ -2,11 +2,12 @@ package com.gy.crawler.service;
 
 import com.gy.crawler.model.External;
 import com.gy.crawler.model.ExternalRS;
+import com.gy.crawler.utils.ExportXLS;
 import com.gy.crawler.utils.JSONUtil;
 import com.gy.crawler.utils.PropertyHelper;
 import com.yeezhao.guizhou.client.SpellCheckerClient;
+import jxl.write.WriteException;
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
@@ -17,7 +18,6 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -34,10 +34,9 @@ public class LinkUnAvailService {
     private SpellCheckerClient client;
     private HTable table;
 
-    @PostConstruct
     public void init(String tablename) {
         propertyHelper = new PropertyHelper("redisconf");
-        hbConfig = new HBaseConfiguration();
+        hbConfig = new Configuration();
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(Integer.valueOf(propertyHelper.getValue("MAXTOTAL")));
         config.setMaxIdle(Integer.valueOf(propertyHelper.getValue("IDLE")));
@@ -45,7 +44,7 @@ public class LinkUnAvailService {
         config.setTestOnBorrow(true);
         jedisPool = new JedisPool(config, propertyHelper.getValue("IP"), Integer.valueOf(propertyHelper.getValue("PORT")));
         hbConfig.addResource("hbase-site.xml");
-        hbConfig = HBaseConfiguration.create(hbConfig);
+//        hbConfig = HBaseConfiguration.create(hbConfig);
         client = new SpellCheckerClient();
     }
 
@@ -101,9 +100,12 @@ public class LinkUnAvailService {
         try {
             table = new HTable(hbConfig, tableName);
             Scan scan = new Scan();
+            scan.setCaching(50);
+            scan.addColumn(Bytes.toBytes("url"), Bytes.toBytes("text"));
+
             rs = table.getScanner(scan);
             jedis = jedisPool.getResource();
-            jedis.select(10);
+            jedis.select(9);
 
             for (Result r : rs) {
                 String url = Bytes.toString(r.getValue(Bytes.toBytes("crawlerData"), Bytes.toBytes("url")));
@@ -111,13 +113,36 @@ public class LinkUnAvailService {
 
                 String errorWords = client.query(text);
 
-                jedis.hset(tableName + "_errorwords" +
-                        new SimpleDateFormat("YYYYmmdd-HHmmss").format(new Date()), url, errorWords);
+                jedis.hset(tableName + "_errorwords", url, errorWords);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public void batchFromRedis(String tableName) {
+        Jedis jedis = jedisPool.getResource();
+        jedis.select(9);
+
+        Map<String, String> errorWordsMap = new HashMap<String, String>();
+        errorWordsMap = jedis.hgetAll(tableName + "_errorwords");
+        ExportXLS exportXlS = new ExportXLS();
+        int i = 0;
+        for (Map.Entry<String, String> entry : errorWordsMap.entrySet()) {
+            try {
+                exportXlS.createExcel(tableName, i, entry.getKey(), entry.getValue());
+                i++;
+            } catch (WriteException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public void validTest() {
+        System.out.println("test valid!");
     }
 
     //test
